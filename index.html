@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multipagina responsivo con css, html y javascrypt</title>
+    
+    <!-- bosstrap iconos con CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Swiper JS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo"><h4>Logo</h4></a>
+            <ul class="nav_menu">
+                <li><a href="blog.html">Inicio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+                <li><a href="singin.html">Inicio sesion</a></li>
+                <li class="nav_perfil">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">dashboard</a></li>
+                        <li><a href="logout.html">dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open-menu-btn"><i class="bi bi-list"></i></button>
+            <button id="close-menu-btn"><i class="bi bi-x-square"></i></button>
+        </div>
+    </nav>
+<!-- END NAVBAR -->
+
+<!-- HEADER -->
+    <header>
+        <div class="container header_container">
+            <div class="header_izquerda">
+                <h1>Encuentra las respuestas a todas tus preguntas</h1><!-- pendiente cambiar el eslogan o el titulo -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt reprehenderit rerum aspernatur. 
+                    Impedit cumque quae ipsam repellat aut, quaerat accusantium quo veritatis consectetur animi. Impedit dicta ab totam fuga laudantium!
+                </p>
+                <a href="courses.html" class="btn btn-primary">iniciar</a><!-- el btn es para convertir esta linea en un boton para que te cambie otra pagina -->
+            </div>
+
+            <div class="header_derecha"><!-- pendiente si tiene que ser en image o imagen -->
+                <div class="header_derecha-imagen">    
+                    <img src="./images/header.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END Header -->
+
+<!-- categorias -->
+    <section class="categorias">
+        <div class="container categorias_container"><!-- contenedor -->
+            <div class="categorias_izquierda">
+                <h1>categorias</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, possimus qui totam, cumque, 
+                    excepturi iusto voluptate voluptatem quasi impedit quia eaque voluptas. Beatae minus praesentium itaque molestiae vero, repudiandae distinctio.
+                </p>
+                <a href="#" class="btn">buscar mas</a>
+            </div>
+            <!-- informacion de la categoria individual, cada uno de estos article es un cuadro de las clases -->
+            <div class="categorias_derecha">
+
+                <article class="categoria">
+                    <span class="categoria_icono"><i class="bi bi-brush"></i></span>
+                    <h5>Artes graficas y diseño</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, in?</p>
+                </article>
+                
+                <article class="categoria">
+                    <span class="categoria_icono"><i class="bi bi-cart4"></i></span>
+                    <h5>Marketing digital</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, in?</p>
+                </article>
+
+                <article class="categoria">
+                    <span class="categoria_icono"><i class="bi bi-pencil"></i></span>
+                    <h5>Escritura y traduccion</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, in?</p>
+                </article>
+
+                <article class="categoria">
+                    <span class="categoria_icono"><i class="bi bi-film"></i></span>
+                    <h5>Video y animacion</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, in?</p>
+                </article>
+
+                <article class="categoria">
+                    <span class="categoria_icono"><i class="bi bi-music-note-beamed"></i></i></span>
+                    <h5>Musica y audio</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, in?</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+<!-- END CATEGORIAS -->
+
+<!-- CURSOS -->
+    <section class="cursos">
+        <h2>Cursos Populares</h2>
+        <div class="container cursos_container">
+            <article class="curso">
+                <div class="curso_imagen">
+                    <img src="./images/course1.jpg">
+                </div>
+                <div class="curso_info">
+                    <h4>Web social responsivo con desarrollo UI</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Quae vel rem assumenda, esse quo earum tempora.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Busca mas</a>
+                </div>
+            </article>
+
+            <article class="curso">
+                <div class="curso_imagen">
+                    <img src="./images/course2.jpg">
+                </div>
+                <div class="curso_info">
+                    <h4>App para telefono responsivo con desarrollo UI</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Quae vel rem assumenda, esse quo earum tempora.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Busca mas</a>
+                </div>
+            </article>
+
+            <article class="curso">
+                <div class="curso_imagen">
+                    <img src="./images/course3.jpg">
+                </div>
+                <div class="curso_info">
+                    <h4>Delivery responsivo con desarrollo UI</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Quae vel rem assumenda, esse quo earum tempora.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Busca mas</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+<!-- END CURSOS -->
+
+<!-- TESTIMONIOS -->
+    <section class="container testimonios_container mySwiper">
+        <h2>Testimonios de estudiantes</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Dayana Marta</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Dewey </h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Rogelio</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Muhamed</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Luna Lunera</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar6.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Jean Doe</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonios swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar7.jpg">
+                </div>
+                <div class="testimonio_info">
+                    <h5>Sandra</h5>
+                    <small>Estudiante</small>
+                </div>
+                <div class="testimonio_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus culpa tempore quam voluptates
+                        suscipit quisquam officiis quas consectetur praesentium eos provident quaerat cum voluptatum 
+                        repellat accusantium perferendis, consequuntur sunt?
+                    </p>
+                </div>
+            </article>
+        </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+    </section>
+<!-- END TESTIMONIOS -->
+
+<!-- preguntas frecuentes -->
+    <section class="faqs">
+        <h2>PREGUNTAS FRECUENTES</h2>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="bi bi-plus"></i></div>
+                <div class="question_respuesta">
+                    <h4>Como se cual es el curso correcto para mi?</h4>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque esse porro,
+                        excepturi beatae reiciendis culpa? Labore inventore quasi neque.
+                    </P>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- END PREGUNTAS FRECUENTES -->
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>Expertrix</h4></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi dolorem nemo voluptatem aut cumque laborum.
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>enlaces</h4>
+                <ul class="enlaces">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Courses</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>politicas</h4>
+                <ul class="politicas">
+                    <li><a href="#">Politicas de privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Politicas de privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footeer_4">
+                <h4>Contactos</h4>
+                <div>
+                    <p>+54 434 819 5736</p>
+                    <p>ejemplo@example.com</p>
+                </div>
+                <ul class="footer_redesSociales">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>         
+            <div class="footer_copyright">
+                <small>Copyright &copy; Expertrix</small>
+            </div>
+    </footer>
+<!-- END FOOTER -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>

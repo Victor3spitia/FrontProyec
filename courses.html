@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multipagina responsivo con css, html y javascrypt</title>
+    
+    <!-- bosstrap iconos con CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/courses.css">
+
+    <!-- Swiper JS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo"><h4>Logo</h4></a>
+            <ul class="nav_menu">
+                <li><a href="blog.html">Inicio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+                <li><a href="singin.html">Inicio sesion</a></li>
+                <li class="nav_perfil">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">dashboard</a></li>
+                        <li><a href="logout.html">dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open-menu-btn"><i class="bi bi-list"></i></button>
+            <button id="close-menu-btn"><i class="bi bi-x-square"></i></button>
+        </div>
+    </nav>
+<!-- END NAVBAR -->
+
+<!-- DESTACADOS -->
+    <section class="featured">
+        <div class="container featured_container">
+            <div class="post_miniatura">
+                <img src="./images/blog1.jpg">
+            </div>
+            <div class="post_info">
+                <a href="" class="categoria_button">vida salvaje</a>
+                <h2 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Rem?</a></h2>
+                <p class="post_body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores vero, assumenda in, repudiandae nesciun
+                    t quae voluptatibus voluptatum odio, veritatis qui! Eum quibusdam sequi ipsum, ab non rem nihil corrupti?
+                </p>
+                <div class="post_autor">
+                    <div class="post_avatar">
+                        <img src="./images/avatar2.jpg">
+                    </div>
+                    <div class="post_info">
+                        <h5>By: Marily manson</h5>
+                        <small>20, Enero, 2025 - 07:49</small> <!-- fecha -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END DESTACADOS -->
+
+<!-- POST VARIADOS -->
+    <section class="posts">
+        <div class="container posts_container">
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog2.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar3.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog15.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar14.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog10.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar10.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog28.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar9.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog36.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar14.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog4.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar13.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog48.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar17.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post_miniatura">
+                    <img src="./images/blog38.jpg">
+                </div>
+                <div class="post_info">
+                    <a href="" class="categoria_button">vida salvaje</a>
+                    <h3 class="post_titulo"><a href="post.html">Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Ab?</a>
+                    </h3>
+                    <p class="post_body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Magni consequatur, qui facilis consectetur placeat ducimus nihil architecto ut.
+                    </p>
+                    <div class="post_autor">
+                        <div class="post_avatar">
+                            <img src="./images/avatar15.jpg">
+                        </div>
+                        <div class="info_autor">
+                            <h5>By: Jonathan Joestar</h5>
+                            <small>23, febrero, 2025 - 10:30</small>
+                        </div>
+                    </div>
+                </div>
+            </article>         
+        </div>
+    </section>
+<!-- END POST VARIADOS -->
+
+<!-- CATEGORIAS -->
+    <section class="categorias_buttons">
+        <div class="container categorias_container">
+            <a href="" class="categoria_button">arte</a>
+            <a href="" class="categoria_button">vida salvaje</a>
+            <a href="" class="categoria_button">viajes</a>
+            <a href="" class="categoria_button">musica</a>
+            <a href="" class="categoria_button">tecnologia</a>
+            <a href="" class="categoria_button">musica</a>
+        </div>
+    </section>
+<!-- END CATEGORIAS -->
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>Expertrix</h4></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi dolorem nemo voluptatem aut cumque laborum.
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>enlaces</h4>
+                <ul class="enlaces">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Courses</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>politicas</h4>
+                <ul class="politicas">
+                    <li><a href="#">Politicas de privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Politicas de privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footeer_4">
+                <h4>Contactos</h4>
+                <div>
+                    <p>+54 434 819 5736</p>
+                    <p>ejemplo@example.com</p>
+                </div>
+                <ul class="footer_redesSociales">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>         
+            <div class="footer_copyright">
+                <small>Copyright &copy; Expertrix</small>
+            </div>
+    </footer>
+<!-- END FOOTER -->
+
+
+
+
+<script src="./main.js"></script>
