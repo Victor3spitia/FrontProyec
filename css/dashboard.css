@@ -169,7 +169,7 @@ nav button{
 
 .nav_perfil ul {
     position: absolute;
-    top: 85%;
+    top: 100%;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -199,38 +199,98 @@ nav button{
     color: var(--color-bg);
 }
 
-/* ---------- POSTEO SOLO ----------- */
+/* -------------- BOTON BUSCAR ------------ */
 
-.singlepost {
-    margin: 6rem 0 2rem;
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
 }
 
-.singlepost_container {
-    width: var(--form-width);
+.btn.sm {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.btn.danger {
+    background: var(--color-danger);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+/* -------------- DASHBOARD ------------ */
+
+.dashboard {
+    margin-top: 6rem;
+}
+
+.dashboard_container {
+    display: grid;
+    grid-template-columns: 14rem auto;
+    gap: 1rem;
     background: var(--color-gray-900);
-    padding: 1rem 2rem 2rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
 }
 
-.singlepost_container p{
-    margin-top: 1rem;
-    line-height: 1.7;
-}
-
-.singlepost_minatura {
-    margin: 1.5rem 0 1rem;
-}
-
-.post_autor {
+.dashboard aside a {
+    background-color: var(--color-primary);
     display: flex;
     gap: 1rem;
-    margin-top: 1.2rem;
+    align-items: center;
+    padding: 1.6rem;
 }
 
-.post_avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--card-border-radius-3);
-    overflow: hidden;
+.dashboard aside ul li:not(:last-child) a {
+    border-bottom:  1px solid var(--color-gray-900);
+}
+
+.dashboard aside a:hover{
+    background: var(--color-gray-700);
+}
+
+.dashboard aside a.active {
+    background-color: var(--color-gray-900);
+} 
+
+.dashboard main {
+    margin-left: 1.5rem;
+}
+
+.dashboard main h2 {
+    margin: 0 0 2rem 0;
+    line-height: 1;
+}
+
+.dashboard main table {
+    width: 100%;
+    text-align: left;
+}
+
+.dashboard main table th {
+    background: var(--color-gray-700);
+    padding: 0.8rem;
+    color: var(--color-white);
+}
+
+.dashboard main table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.dashboard main table tr:hover td {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    cursor: default;
+    transition: var(--transition);
 }
 
 /* ---------- FOOTER ----------- */
@@ -276,8 +336,3 @@ footer ul li a:hover {
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
 }
-
-
-
-
-

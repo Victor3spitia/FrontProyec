@@ -237,7 +237,7 @@ nav button{
 
 .barra_container > div {
     width: 100%;
-    display: flex;
+    display: flex; 
     align-items: center;
 }
 
@@ -264,29 +264,6 @@ nav button{
     transition: var(--transition);
     color: var(--color-white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------- POST GENERAL ------------ */
 
@@ -340,8 +317,15 @@ nav button{
     gap: 1rem;
 }
 
+/* ---------------------POST CATEGORIA---------------- */
 
-
+.categoria_titulo {
+    height: 15rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
 
 
 /* ---------- FOOTER ----------- */
